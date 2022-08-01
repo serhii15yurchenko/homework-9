@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #3DB370;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  min-height: 80px;
+  border-bottom: 1px solid #EFEEF3;
+  padding: 23px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1170px) {
+  .header__wrapper {
+    justify-content: center;
+  }
+}
+.header__wrapper .header__logo {
+  width: 30px;
+  height: 30px;
+}
+.header__wrapper .header__title {
+  margin-left: 13px;
+  font-size: 35px;
+  font-weight: 500;
+  color: #16133D;
+  font-family: "Quicksand", sans-serif;
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 1170px) {
+  main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.main-title {
+  margin-bottom: 40px;
+}
+.main-title span {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #7690A8;
+  display: block;
+}
+.main-title h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0, 2px;
+  color: #16133D;
+}
+
+.list {
+  display: flex;
+}
+@media only screen and (max-width: 1170px) {
+  .list {
+    flex-direction: column;
+  }
+}
+.list .list-item {
+  padding: 40px;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+  width: 370px;
+  height: 340px;
+}
+@media only screen and (max-width: 1170px) {
+  .list .list-item {
+    width: 100%;
+    height: unset;
+    padding: 20px;
+  }
+}
+.list .list-item .services-icons {
+  width: 64px;
+  height: 64px;
+  padding: 14px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+}
+.list .list-item .services-icons .icon-blue {
+  width: 33px;
+  height: 33px;
+}
+.list .list-item .services-icons .icon-green {
+  display: none;
+  width: 33px;
+  height: 33px;
+}
+.list .list-item h3 {
+  color: #16133D;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+.list .list-item p {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #16133D;
+}
+.list .list-item a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.list .list-item:hover {
+  border-color: #3DB370;
+  cursor: pointer;
+}
+.list .list-item:hover .services-icons {
+  border-color: rgba(61, 179, 112, 0.1);
+}
+.list .list-item:hover .icon-blue {
+  display: none;
+}
+.list .list-item:hover .icon-green {
+  display: block;
+}
+.list .list-item:not(:first-child) {
+  margin-left: 30px;
+}
+@media only screen and (max-width: 1170px) {
+  .list .list-item:not(:first-child) {
+    margin-left: 0;
+  }
+}
+.list .list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #16133D;
+}
+@media only screen and (max-width: 1170px) {
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1170px) {
+  .footer__wrapper {
+    margin-bottom: 20px;
+  }
+}
+.footer__wrapper .footer__logo {
+  width: 30px;
+  height: 30px;
+}
+.footer__wrapper .footer__title {
+  margin-left: 13px;
+  font-size: 35px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+.social-logo {
+  display: flex;
+}
+.social-logo .social-item {
+  background-color: #EFEEF3;
+  border-radius: 5px;
+}
+.social-logo .social-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+}
+.social-logo .social-item a .icon {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+}
+.social-logo .social-item a:hover .icon {
+  fill: #3DB370;
+}
+.social-logo .social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
