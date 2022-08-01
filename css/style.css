@@ -39,6 +39,11 @@ a {
   color: #16133D;
   font-family: "Quicksand", sans-serif;
 }
+@media only screen and (max-width: 420px) {
+  .header__wrapper .header__title {
+    font-size: 25px;
+  }
+}
 
 main {
   padding-top: 100px;
@@ -50,9 +55,22 @@ main {
     padding-bottom: 70px;
   }
 }
+@media only screen and (max-width: 420px) {
+  main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 .main-title {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1170px) {
+  .main-title {
+    text-align: center;
+  }
 }
 .main-title span {
   margin-bottom: 15px;
@@ -61,12 +79,22 @@ main {
   color: #7690A8;
   display: block;
 }
+@media only screen and (max-width: 420px) {
+  .main-title span {
+    font-size: 14px;
+  }
+}
 .main-title h2 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 0, 2px;
   color: #16133D;
+}
+@media only screen and (max-width: 420px) {
+  .main-title h2 {
+    font-size: 30px;
+  }
 }
 
 .list {
@@ -89,6 +117,14 @@ main {
     width: 100%;
     height: unset;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .list .list-item {
+    padding: 10px;
   }
 }
 .list .list-item .services-icons {
@@ -101,6 +137,11 @@ main {
   margin-bottom: 30px;
   border: 1px solid rgba(21, 101, 216, 0.1);
   border-radius: 16px;
+}
+@media only screen and (max-width: 420px) {
+  .list .list-item .services-icons {
+    margin-bottom: 15px;
+  }
 }
 .list .list-item .services-icons .icon-blue {
   width: 33px;
@@ -118,6 +159,16 @@ main {
   letter-spacing: 0.2px;
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 1170px) {
+  .list .list-item h3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .list .list-item h3 {
+    font-size: 18px;
+  }
+}
 .list .list-item p {
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
@@ -125,10 +176,26 @@ main {
   line-height: 28px;
   color: #16133D;
 }
+@media only screen and (max-width: 1170px) {
+  .list .list-item p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .list .list-item p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
 .list .list-item a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
+}
+@media only screen and (max-width: 420px) {
+  .list .list-item a {
+    font-size: 13px;
+  }
 }
 .list .list-item:hover {
   border-color: #3DB370;
@@ -151,11 +218,14 @@ main {
     margin-left: 0;
   }
 }
-.list .list-item:not(:last-child) {
-  margin-bottom: 20px;
+@media only screen and (max-width: 1170px) {
+  .list .list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer {
+  min-height: 193px;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #16133D;
@@ -165,8 +235,14 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 123px;
   }
 }
 
@@ -178,6 +254,7 @@ main {
 @media only screen and (max-width: 1170px) {
   .footer__wrapper {
     margin-bottom: 20px;
+    justify-content: center;
   }
 }
 .footer__wrapper .footer__logo {
@@ -191,9 +268,19 @@ main {
   color: #fff;
   font-family: "Quicksand", sans-serif;
 }
+@media only screen and (max-width: 420px) {
+  .footer__wrapper .footer__title {
+    font-size: 25px;
+  }
+}
 
 .social-logo {
   display: flex;
+}
+@media only screen and (max-width: 1170px) {
+  .social-logo {
+    justify-content: center;
+  }
 }
 .social-logo .social-item {
   background-color: #EFEEF3;
@@ -206,10 +293,22 @@ main {
   width: 38px;
   height: 38px;
 }
+@media only screen and (max-width: 420px) {
+  .social-logo .social-item a {
+    width: 25px;
+    height: 25px;
+  }
+}
 .social-logo .social-item a .icon {
   width: 20px;
   height: 20px;
   fill: #000;
+}
+@media only screen and (max-width: 420px) {
+  .social-logo .social-item a .icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 .social-logo .social-item a:hover .icon {
   fill: #3DB370;
