@@ -4,10 +4,27 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 a {
     text-decoration: none;
     color: $green;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .container {
     max-width: 1170px;
@@ -210,6 +227,7 @@ main {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: $black;
+    margin-top: auto;
     @media only screen and (max-width:1170px) {
         padding-top: 20px;
         padding-bottom: 20px;
